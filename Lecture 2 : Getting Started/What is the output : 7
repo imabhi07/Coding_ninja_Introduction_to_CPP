@@ -5,4 +5,5 @@ cout << i;
 Answer -99
 
 Solution Description
-When you add a character and an integer, answer is also an integer. It will add the ASCII value of  char ‘a’ i.e 97  and int 1. So answer will be 98.
+
+When we put char 'c' into an integer, its ASCII value will be put in the integer i.e. 99.
