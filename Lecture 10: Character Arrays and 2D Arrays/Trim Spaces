@@ -1,0 +1,16 @@
+
+
+void trimSpaces(char a[]){
+	int i=0,j=0;
+	while(a[i]!='\0'){
+		if(a[i]!=' '){
+				a[j++]=a[i];
+		}
+		i++;
+	}
+    a[j]='\0';
+}
+
+
+
+
