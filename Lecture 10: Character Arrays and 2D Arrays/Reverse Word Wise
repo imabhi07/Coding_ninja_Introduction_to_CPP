@@ -1,0 +1,41 @@
+void reverseStringWordWise(char str[]){
+	char ans[1000];
+	int z=0;
+	int i,k,j;
+	int count=0;
+	for(int d=0;str[d]!='\0';d++){
+		count++;
+	}
+	i=count;
+	k=i;
+	j=i;
+	while(i>=0){
+		if(str[i]==' '){
+			k=i+1;
+			while(k<j){
+				ans[z++]=str[k++];
+			}
+			ans[z++]=' ';
+			k=i;
+			j=k;
+			
+		}
+		if(i==0){
+			k=0;
+			while(k<j){
+				ans[z++]=str[k++];
+			}
+		}
+		i--;
+	}
+	ans[z]='\0';
+	for(int i=0;ans[i]!='\0';i++){
+		str[i]=ans[i];
+	}
+}
+
+
+
+
+
+
