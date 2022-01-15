@@ -1,0 +1,23 @@
+
+bool checkPalindrome(char str[]) {
+    bool a=true;
+    int len=0;
+    for(int i=0;str[i]!='\0';i++){
+    	len++;
+	}
+	int i=0,j=len-1;
+	while(i<j){
+		if(str[i++]==str[j--]){
+			
+		}else{
+			a=false;
+			break;
+		}
+	}
+    return a;
+}
+
+
+
+
+
