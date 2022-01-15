@@ -1,0 +1,20 @@
+
+
+void removeAllOccurrencesOfChar(char str[],char c){
+    char ans[10000];
+    int i=0,z=0;
+    while(str[i]!='\0'){
+    	if(str[i]!=c){
+    		ans[z++]=str[i];
+		}
+		i++;
+	}
+	strcpy(str,ans);
+    str[z]='\0';
+}
+
+
+
+
+
+
