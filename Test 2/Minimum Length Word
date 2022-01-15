@@ -1,0 +1,25 @@
+Given a string S (that can contain multiple words), you need to find the word which has minimum length.
+
+void minLengthWord(char str[], char output[]){
+	int min=100,count=0,index;	
+	for(int i=0;str[i]!='\0';i++){
+		if(str[i]!=' '){
+			count++;
+        }else{
+			if(count<min){
+				min=count;
+				index=i;	
+			}
+			count=0;
+		}
+	}
+    int z=0;
+	for(int i=index-min;i<=index;i++){
+		output[z++]=str[i];
+	}
+	output[z]='\0';
+}
+
+
+
+
