@@ -1,0 +1,31 @@
+
+
+string getCompressedString(string &str){
+	string ans="";
+	int i=0,z=1;
+	
+	int count=1;
+	while(str[i]!='\0'){	
+		if(count==1){
+		ans.append(1,str[i]);
+		}
+		if(str[i]==str[i+1]){
+			count++;
+		}else{if(count>1){
+				ans.append(1,count+48);
+				count=1;
+			}else{
+			if(count==1){
+				
+			}else{
+				ans.append(1,str[i]);
+			}	
+			}
+		}
+		i++;
+	}
+	return ans;
+}
+
+
+
