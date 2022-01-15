@@ -1,0 +1,19 @@
+
+
+void removeConsecutiveDuplicates(char str[]) {
+    char ans[10000];
+    int z=0;
+    for(int i=0;i<strlen(str);i++){
+    	if(str[i]!=str[i+1]){
+    		ans[z++]=str[i];
+		}
+	}
+    int len=strlen(ans);
+	strcpy(str,ans);
+     str[z]='\0';
+}
+
+
+
+
+
